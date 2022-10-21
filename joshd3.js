@@ -4,6 +4,9 @@ const svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
+
+
+
 // Map and projection
 const projection = d3.geoMercator()
 .center([144.946, -37.815018])                // GPS of location to zoom on
@@ -25,3 +28,16 @@ d3.json("/E_VIC21_region.geojson").then( function(data) {
             .style("stroke", "#fff")
 
 })
+
+    
+let zoom = d3.zoom()
+    .on('zoom', handleZoom);
+
+function handleZoom(e) {
+    d3.select('#josh g')
+      .attr('transform', e.transform);
+}
+
+
+d3.select('#josh')
+  .call(zoom);
