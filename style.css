@@ -2,7 +2,5 @@
     margin: auto;
     width: max(340px,60%);
     border: 3px solid black;
-}
-.graphwrapper{
-    
+    min-height:1000px;/* make sure it is at least as tall as the viewport */
 }
