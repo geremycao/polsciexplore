@@ -1,0 +1,5 @@
+#mainbar{
+    margin: auto;
+    width: max(340px,60%);
+    border:10px solid black;
+}
