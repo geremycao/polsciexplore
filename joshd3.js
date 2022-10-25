@@ -1,6 +1,6 @@
 
 // set the dimensions and margins of the graph
-const svg = d3.select("svg"),
+const svg = d3.select("#josh"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
